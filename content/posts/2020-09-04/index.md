@@ -1,7 +1,7 @@
 ---
 title: How to add Accordion to your Minimal theme
 author: Driss Oudmine
-date: 2020-05-02
+date: 2020-09-03
 hero: ./images/hero.jpg
 excerpt: Improve your Store UI/UX and increase your sales by organizing Products Descriptions.
 ---
