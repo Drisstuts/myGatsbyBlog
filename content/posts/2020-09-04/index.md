@@ -8,6 +8,7 @@ excerpt: Improve your Store UI/UX and increase your sales by organizing Products
 An "accordion" is a great way to display Products descriptions to your ecommerce store, since it allows the user to
 quickly and easily browse your Product informations without much scrolling. And luckily, it's simple and easy to add one
 to your store! Let me show you how
+
 1. From your Shopify admin, go to **Online Store** > **Themes**.
 2. Find the Minimal theme, and then click **Actions** > **Duplicate**.
 3. Find the theme that called *Copy of Minimal* then click **Actions** > **Edit Code**.
@@ -178,7 +179,7 @@ to your store! Let me show you how
    })
 </script>
 ```
-**7.** On the left bar, find a folder called *Sections* then search for a file called "product-template.liquid" it's the
+**7.** Next, On the left bar. Find a folder called *Sections* then search for a file called "product-template.liquid" it's the
 third file starting from the bottom!
 
 **8.** Replace the following code
@@ -187,7 +188,7 @@ third file starting from the bottom!
    {% include 'accordion-description' %}
 </div>
 ```
-with the one that is highlighted below. That chunk of code is between line 221-246 in your Code Editor
+with the one that is highlighted below. That highlighted code is between line 221-246 in your Code Editor
 ```js {13-40}
 <div class="product-single__quantity{% unless section.settings.product_quantity_enable %} is-hidden{% endunless %}">
    <label for="Quantity">{{ 'products.product.quantity' | t }}</label>
@@ -236,6 +237,18 @@ with the one that is highlighted below. That chunk of code is between line 221-2
 {% endif %}
 </div>
 ```
-**9.** Now we are going to need custom fields in order to make each product has its own informations! so in this case we
+**9.** Now, we are going to need custom fields in order to make each product with its own informations! so in this case we
 will need to install an app called [Metafields
 Guru](https://apps.shopify.com/metafields-editor-2?surface_detail=metafields&surface_inter_position=1&surface_intra_position=4&surface_type=search)
+
+**10.** After you install the app, select Products and Variants then choose one of your products that you want to have Accordion.
+
+**11.** After you choose the product, click on *Create Metafield* button.
+
+**12.** Now you can see a Form appeared after you click on *Create Metafield*, inside the input with name of "Key" start writing **title** and inside the input with the name of "Namespace" start writing **tab1**. Next give a title to your first tab inside the last input which is the tallest one!
+
+**13.** After you finish your first Metafield, create another one by clicking on *Create Metafield* button. Again inside the input with the name of "Key" start writing **content** and inside the input with the name of "Namespace" start writing **tab1**. Finally inside the tallest input start writing the Content of your first tab.
+
+**14.** After you finish creating all tabs you can click on **Save** button. 
+
+**Note:** You can only create Five tabs at maximum! if you need more than five tabs don't hisitate to ask me for help ^^ 
